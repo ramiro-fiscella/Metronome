@@ -1,2 +1,2 @@
 # Metronomo
- It's simple
+ A simple metronome
