@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  color: #f0e6c5;
+  background-color: #135247;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.metronome {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.bpm-display {
+  width: 100%;
+  text-align: center;
+  color: #f8b54a;
+  font-weight: bold;
+  margin: -2.2em 0;
+}
+
+.bpm-display .tempo {
+  font-size: 6em;
+}
+
+.bpm {
+  width: 100%;
+  text-align: center;
+  color: #f8b54a;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.tempo-text {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.tempo-settings {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.tempo-settings .adjust-tempo-btn {
+  font-size: 35px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tempo-settings .adjust-tempo-btn:hover {
+  background-color: #f8b54a;
+  color: #135247;
+}
+
+.tempo-settings .decrease-tempo {
+  line-height: 35px;
+}
+
+.tempo-settings .increase-tempo {
+  line-height: 35px;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 70%;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f8b54a;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f8b54a;
+  cursor: pointer;
+  border: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  background: #f8b54a;
+}
+
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  background: #f8b54a;
+}
+
+.start-stop {
+  width: 60px;
+  height: 60px;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 50%;
+  background: #f8b54a;
+  line-height: 60px;
+  margin: 1em auto 1.5em;
+  cursor: pointer;
+  color: #135247;
+}
+
+.start-stop:hover {
+  background: #f0e6c5;
+}
+
+.measures {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.measures .stepper {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid;
+  text-align: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.measures .stepper:hover {
+  background-color: #f8b54a;
+  color: #135247;
+}
+
+.measures .add-beats {
+  line-height: 25px;
+  margin: 0 1em;
+}
+
+.measures .substract-beats {
+  line-height: 26px;
+  margin: 0 1em;
+}
+
+.beats-per-measure-text {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0.2em 0;
+}
